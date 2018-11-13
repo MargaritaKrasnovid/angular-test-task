@@ -1,0 +1,12 @@
+src |- app
+    |  core|- services
+           |- pages  | - header
+                     | - footer
+                     | - home |- playList |- header
+                                          |- footer
+                                          |- body | - asset
+                                                  | - release
+
+
+      shared| - groupButton
+            | - pipes
