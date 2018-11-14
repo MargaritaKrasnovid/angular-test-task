@@ -1,0 +1,8 @@
+@import '../../../../assets/style/variables.scss';
+@import '../../../../assets/style/mixin.scss';
+
+.app-asset {
+    background: $color-white;
+    width: $card-width;
+    @include border(1px, $color-black);
+}

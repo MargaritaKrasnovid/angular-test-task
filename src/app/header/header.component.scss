@@ -1,0 +1,6 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/variables.scss';
+
+.app-header {
+    @include border(1px, $color-grey);
+}

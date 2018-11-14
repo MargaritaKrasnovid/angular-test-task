@@ -1,4 +1,6 @@
-class Release {
+import { Resource } from 'src/app/shared/interfaces/resource';
+
+export class Release implements Resource {
     id: number;
     pline: string;
     display_title: string;

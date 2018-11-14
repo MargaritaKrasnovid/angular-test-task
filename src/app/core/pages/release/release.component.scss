@@ -1,0 +1,8 @@
+@import '../../../../assets/style/mixin.scss';
+@import '../../../../assets/style/variables.scss';
+
+.app-release {
+    background: $color-grey;
+    width: $card-width;
+    @include border(1px, $color-black);
+}

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PlayListComponent } from './core/pages/playList';
+import { HomeComponent } from './core/pages/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: PlayListComponent}
+  { path: 'home', component: HomeComponent}
 ];
 
 @NgModule({
