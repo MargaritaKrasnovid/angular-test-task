@@ -1,22 +1,18 @@
-import { Component, OnInit, Input, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
-import { AssetService } from '../../../services/asset.service';
-import { Resource } from 'src/app/shared/interfaces/resource';
+import { Component, Input, AfterContentInit, ContentChildren, QueryList, TemplateRef, ContentChild, OnInit } from '@angular/core';
 import { BodyComponent } from './body/body.component';
+import { AssetComponent } from '../../asset/asset.component';
 
 @Component({
   selector: 'app-play-list',
   templateUrl: './playList.component.html',
   styleUrls: ['./playList.component.scss']
 })
-export class PlayListComponent implements AfterContentInit {
-
-  @ContentChildren(BodyComponent)
-  resources: QueryList<BodyComponent>;
+export class PlayListComponent implements OnInit {
+  @Input()
+  public data;
 
   constructor() { }
 
-  ngAfterContentInit() {
-    this.resources.forEach(item => item.getResource());
-    console.log(this.resources);
+  ngOnInit() {
   }
 }

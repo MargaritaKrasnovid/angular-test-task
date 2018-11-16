@@ -3,8 +3,8 @@ import { Release } from '../core/entities/release';
 export const RELEASES: Release[] = [
     {
         id: 1,
-        pline: 'pline',
-        display_title: 'Young Girls',
+        pline: '2019 Warner Music Group',
+        display_title: 'Young Girls Release1',
         upc: 213,
         main_artists: [ {id: 123,  name: 'Bruno Mars'}],
         featured_artists: [
@@ -18,14 +18,16 @@ export const RELEASES: Release[] = [
         created_at: '08/09/18',
         cover_arts: 'Cardi B',
         genres: [
-            { id: 147, name: 'One'},
-            { id: 147, name: 'Mr. Artist'},
-        ]
+            { id: 147, name: 'Explicit'},
+            { id: 148, name: 'Urban'},
+            { id: 149, name: 'R&B'},
+        ],
+        typeName: 'Release'
     },
     {
         id: 2,
-        pline: 'pline',
-        display_title: 'Young Girls',
+        pline: '2019 Warner Music Group',
+        display_title: 'Young Girls Release2',
         upc: 213,
         main_artists: [ {id: 123,  name: 'Bruno Mars'}],
         featured_artists: [
@@ -39,8 +41,10 @@ export const RELEASES: Release[] = [
         created_at: '08/09/18',
         cover_arts: 'Cardi B',
         genres: [
-            { id: 147, name: 'One'},
-            { id: 147, name: 'Mr. Artist'},
-        ]
+            { id: 147, name: 'Explicit'},
+            { id: 148, name: 'Urban'},
+            { id: 149, name: 'R&B'},
+        ],
+        typeName: 'Release'
     }
 ];

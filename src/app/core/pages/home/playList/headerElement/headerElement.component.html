@@ -1,3 +1,8 @@
-<p>
-  headerelement works!
-</p>
+<div class="app-header-element">
+  <div class="app-header-element__updated">Last edited: {{data.updated_at}}
+  </div>
+  <div [ngSwitch]="data?.typeName">
+      <div  *ngSwitchCase="'Asset'" class="app-header-element__elapsed-release"></div>
+      <div *ngSwitchCase="'Release'" class="app-header-element__elapsed-asset"></div>
+  </div>
+</div>

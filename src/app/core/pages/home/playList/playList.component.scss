@@ -1,5 +1,10 @@
 @import '../../../../../assets/style/variables.scss';
+@import '../../../../../assets/style/mixin.scss';
 
 .app-play-list {
-    background: $color-grey;
+    @include border(1px, $color-black);
+    width: $card-width;
+    height: $card-height;
+    background: $color-white;
+    border-color: $color-dark-grey;
 }

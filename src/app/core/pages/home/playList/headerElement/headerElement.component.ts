@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Resource } from 'src/app/shared/interfaces/resource';
 
 @Component({
   selector: 'app-header-element',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderElementComponent implements OnInit {
 
+  @Input()
+  public data: Resource;
+
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

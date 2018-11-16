@@ -1,4 +1,20 @@
 <div class="app-release">
-    <h4 class="app-release__main_artists">{{release.main_artists}}</h4>
-    <h1 class="app-release__title">{{release.display_title}}</h1>
+  <div class="app-release-wrapper-image">
+    <div class="app-release-icon"></div>
   </div>
+  <div class="app-release-wrapper-info">
+    <div class="app-release__main-artists" *ngFor="let main_artist of main_artists_names">
+      <h4 class="app-release__main-artists--title">{{main_artist}}</h4>
+    </div>
+    <h1 class="app-release__title">{{release.display_title}}</h1>
+    <ul class="list-featured-artists">
+      <span class="list-featured-artists__feat">feat.</span>
+      <li class="list-featured-artists__artist">{{featured_artists_names}}</li>
+    </ul>
+    <ul class="list-genres">
+      <li *ngFor="let genre of genres_names" class="list-genres__genre">{{genre}}</li>
+    </ul>
+    <span>UPC {{release.upc}}</span>
+    <div class="app-release__coop"> &copy; {{release.pline}}</div>
+  </div>
+</div>

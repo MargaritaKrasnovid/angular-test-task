@@ -1,7 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Release } from '../../entities/release';
-import { RELEASES } from 'src/app/datamock/mock-release';
-import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-release',
@@ -11,14 +9,27 @@ import { Observable, of } from 'rxjs';
 export class ReleaseComponent implements OnInit {
   @Input()
   public release: Release;
+  public main_artists_names: string[];
+  public genres_names: string[] = [];
+  public featured_artists_names: string[] = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.getFeaturedArtistsName();
+    this.getGenresName();
+    this.getMainArtistName();
+  }
+  public getGenresName() {
+    this.genres_names = this.release.genres.map(x => x.name);
   }
 
-  public getRelease(): Observable<Release[]> {
-    return of(RELEASES);
+  public getMainArtistName() {
+    this.main_artists_names = this.release.main_artists.map(x => x.name);
+  }
+
+  public getFeaturedArtistsName() {
+    this.featured_artists_names = this.release.featured_artists.map(x => x.name);
   }
 
 }

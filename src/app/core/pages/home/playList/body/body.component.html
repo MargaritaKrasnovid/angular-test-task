@@ -1,2 +1,4 @@
-<app-asset [asset]="asset"></app-asset>
-<app-release [release]="release"></app-release>
+<div [ngSwitch]="data?.typeName" class="app-body">
+    <app-asset *ngSwitchCase="'Asset'" [asset]="data"></app-asset>
+    <app-release *ngSwitchCase="'Release'" [release]="data"></app-release>
+</div>

@@ -9,4 +9,5 @@ export class Asset implements Resource {
     featured_artists: { id: number; name: string }[];
     genres: { id: number; name: string }[];
     updated_at: string;
+    typeName: string;
 }

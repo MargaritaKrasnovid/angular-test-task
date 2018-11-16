@@ -12,4 +12,5 @@ export class Release implements Resource {
     created_at: string;
     cover_arts: string;
     genres: { id: number; name: string }[];
+    typeName: string;
 }

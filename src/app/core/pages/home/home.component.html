@@ -1,3 +1,8 @@
-<div *ngFor="let resource of resources">
-    <app-play-list></app-play-list>
+<div class="home-nav">
+    <h2 class="home-nav__title">Overview</h2>
 </div>
+<ul class="app-play-list">
+    <li *ngFor="let resource of resources" class="app-play-list__resource">
+        <app-play-list [data]="resource"></app-play-list>
+    </li>
+</ul>

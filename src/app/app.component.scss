@@ -1,0 +1,23 @@
+@import '../assets/style/mixin.scss';
+@import '../assets/style/variables.scss';
+
+.wrapper {
+    background: $color-light-grey;
+    color: $color-dark-grey;
+}
+
+
+.navigation { 
+    padding-top: 20px;
+    
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        width: 100px;
+        height: 40px;
+        background: $color-dark-grey;
+        color: $color-white;
+        text-align: center;
+        line-height: 40px;
+    }
+}

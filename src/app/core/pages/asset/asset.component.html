@@ -1,4 +1,15 @@
 <div class="app-asset">
-  <h4 class="app-asset__main_artists">{{asset.main_artists}}</h4>
+  <div class="app-asset__main_artists" *ngFor="let main_artist of main_artists_names">
+    <h4 class="app-asset__main_artists--title">{{main_artist}}</h4>
+  </div>
   <h1 class="app-asset__title">{{asset.display_title}}</h1>
+  <ul class="list-featured-artists">
+    <span class="list-featured-artists__feat">feat.</span>
+    <li class="list-featured-artists__artist">{{featured_artists_names}}</li>
+  </ul>
+  <ul class="list-genres">
+    <li *ngFor="let genre of genres_names" class="list-genres__genre">{{genre}}</li>
+  </ul>
+  <span>UPC {{asset.isrc}}</span>
+  <div class="app-asset__coop"> &copy; {{asset.pline}}</div>
 </div>

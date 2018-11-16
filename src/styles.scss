@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/style/variables.scss';
+
+body {
+    box-sizing: border-box;
+}
+
+app-root {
+    width: 800px;
+    min-width: 500px;
+    font: 100% $font-stack;
+}

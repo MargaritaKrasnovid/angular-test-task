@@ -3,6 +3,51 @@
 
 .app-asset {
     background: $color-white;
-    width: $card-width;
-    @include border(1px, $color-black);
+    padding: 15px;
+
+    &__main_artists--title {
+        margin: 5px 0;
+    }
+
+    &__title {
+        margin: 10px 0;
+    }
+
+    .list-featured-artists {
+        padding: 0;
+
+        &__feat {
+            font-style: italic;
+            font-size: 13px;
+        }
+        
+        &__artist {
+            display: inline-block;
+            list-style-type: none;
+            padding: 0;
+            font-style: italic;
+            font-size: 13px;
+        }
+    }
+
+    .list-genres {
+        padding: 20px 0;
+
+        &__genre {
+            display: inline-block;
+            list-style-type: none;
+            width: 80px;
+            @include border(1px, $color-black);
+            margin-right: 5px;
+            height: 25px;
+            background: $color-light-grey;
+            text-align: center;
+            line-height: 25px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__coop{
+        padding: 10px 0;
+    }
 }
