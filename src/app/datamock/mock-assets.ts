@@ -18,7 +18,7 @@ export const ASSETS: Asset[] = [
             { id: 148, name: 'Urban'},
             { id: 149, name: 'R&B'},
         ],
-        updated_at: '08/03/18',
+        updated_at: '01/04/18',
         typeName: 'Asset'
     },
     {
@@ -38,7 +38,7 @@ export const ASSETS: Asset[] = [
             { id: 148, name: 'Urban'},
             { id: 149, name: 'R&B'},
         ],
-        updated_at: '08/03/18',
+        updated_at: '01/04/18',
         typeName: 'Asset'
     }
 ];

@@ -14,7 +14,7 @@ export const RELEASES: Release[] = [
             {id: 126,  name: 'Artist Eleventy'}
         ],
         assets: [1],
-        updated_at: '08/09/18',
+        updated_at: '01/02/18',
         created_at: '08/09/18',
         cover_arts: 'Cardi B',
         genres: [

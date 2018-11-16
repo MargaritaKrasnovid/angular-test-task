@@ -43,5 +43,12 @@ export class HomeComponent implements OnInit {
 
   public getResources(): void {
     this.resources = [...this.assets, ...this.releases];
+    this.resources.sort(this.dateCompare);
+  }
+
+  public dateCompare(a, b) {
+    a = new Date(a.updated_at);
+    b = new Date(b.updated_at);
+    return a - b;
   }
 }
